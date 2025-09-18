@@ -1,0 +1,54 @@
+#app {
+  display: grid;
+  grid-template-columns: 50% 50%;
+
+  height: 100vh;
+  overflow: hidden;
+
+}
+
+aside {
+  position: relative;
+}
+
+aside h1 {
+  position: absolute;
+  z-index: 2;
+
+  top: 6rem;
+  left: 2rem;
+  font: var(--logo);
+  color: #FF598B;
+  
+}
+
+aside p {
+  position: absolute;
+  z-index: 2;
+
+  top: 9.6rem;
+  left: 2rem;
+
+  font: var(--body-md);
+  color: var(--text-heading);
+}
+
+aside img:nth-child(2){
+  position: absolute;
+  z-index: 2;
+
+  top: 2rem;
+  left: 2rem;
+}
+
+aside img:nth-child(3){
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+
+main {
+  overflow: auto;
+  padding: 6rem;
+}

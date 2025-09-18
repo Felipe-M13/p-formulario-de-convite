@@ -29,10 +29,12 @@
   --heading-sm: 700 18px var(--font-heading);
 
   --font-body: 'Open sans', sans-serif;
-  --body-md: 400 16px var(--font-body);
+  --body-md: 100 16px var(--font-body);
   --body-sm: 400 14px var(--font-body);
   --body-xs: 400 12px var(--font-body);
 
+}
 
-
+body {
+  overflow: hidden;
 }
