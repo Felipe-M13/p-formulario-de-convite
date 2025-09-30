@@ -1,9 +1,10 @@
 #app {
   display: grid;
-  grid-template-columns: 50% 50%;
+  grid-template-columns: 400px 1fr;
 
   height: 100vh;
   overflow: hidden;
+
 
 }
 
@@ -49,6 +50,21 @@ aside img:nth-child(3){
 }
 
 main {
+
+  background-color: var(--shape-body);
+  /* border: solid red; */
+
+  position: relative;
   overflow: auto;
-  padding: 6rem;
+}
+
+main p {
+  position: absolute;
+
+  top: 4rem;
+  left: 8rem;
+
+  font: var(--heading-sm);
+  font-size: 28px;
+  color:var(--text-heading);
 }

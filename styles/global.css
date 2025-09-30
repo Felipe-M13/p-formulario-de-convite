@@ -25,11 +25,11 @@
   --logo: 400 40px var(--font-logo);
  
   --font-heading: 'baloo 2', sans-serif;
-  --heading-md: 700 28px var(--font-heading);
-  --heading-sm: 700 18px var(--font-heading);
+  --heading-md: 500 28px var(--font-heading);
+  --heading-sm: 500 18px var(--font-heading);
 
   --font-body: 'Open sans', sans-serif;
-  --body-md: 100 16px var(--font-body);
+  --body-md: 16px var(--font-body);
   --body-sm: 400 14px var(--font-body);
   --body-xs: 400 12px var(--font-body);
 
