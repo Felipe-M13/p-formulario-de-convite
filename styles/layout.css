@@ -58,7 +58,7 @@ main {
   overflow: auto;
 }
 
-main p {
+.main-title {
   position: absolute;
 
   top: 4rem;
