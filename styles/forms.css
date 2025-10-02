@@ -4,16 +4,21 @@ fieldset {
   margin-left: 7.8rem;
 }
 
-legend{ 
+legend {
   font: var(--heading-md);
-  color:var(--text-heading);
+  color: var(--text-heading);
 
   display: flex;
 
   align-items: center;
   gap: 1rem;
   padding-bottom: 30px;
-  
+
+}
+
+.form-row {
+  display: flex;
+  gap: 1rem;
 }
 
 .form-group {
@@ -22,26 +27,90 @@ legend{
   gap: .5rem;
 }
 
+.form-row+.form-row {
+  margin-top: 1rem;
+  /* afasta só quando um form-group vem logo depois de um form-row */
+}
 
 label {
   font: var(--body-sm);
   color: var(--text-body);
-
-  padding-bottom: 12px;
+  display: block;
+  margin-bottom: .5rem;
 }
 
-input[type="text"] {
-  width: 157px;
-  height: 48px;
+input[type="date"]::-webkit-calendar-picker-indicator,
+input[type="datetime-local"]::-webkit-calendar-picker-indicator {
+  display: none;
+  -webkit-appearance: none;
+}
 
+input[type="date"],
+input[type="text"],
+input[type="datetime-local"],
+input[type="time"] {
+  color: var(--input-placeholder);
+}
+
+
+input[type="text"],
+input[type="datetime-local"] {
   background-color: var(--input-base);
-
-
   padding: 1rem;
   border-radius: 8px;
   border: 1px solid var(--input-stroke);
 }
 
+input[type="datetime-local"] {
+  width: 272px;
+  height: 48px;
+
+}
+
+input[type="text"] {
+  width: 157px;
+  height: 48px;
+}
+
+
 input::placeholder {
   color: var(--input-placeholder);
 }
+
+.options {
+  display: flex;
+  gap: .75rem;
+  padding: .3rem;
+  border-radius: 12px;
+  border: 2px solid var(--input-stroke);
+  width: 272px;
+  height: 48px;
+
+}
+
+.options input[type="radio"] {
+  display: none;
+}
+
+.options label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 130px;
+  height: 34px;
+
+  background: transparent;
+  color: var(--text-body);
+  font: var(--body-sm);
+  cursor: pointer;
+}
+
+.options input[type="radio"]:checked+label {
+  background-color: var(--shape-button);
+  border-radius: 8px;
+  border: none;
+  color: var(--text-heading);
+  font-weight: bold;
+}
+
