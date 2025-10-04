@@ -99,6 +99,7 @@ input::placeholder {
 
   width: 130px;
   height: 34px;
+  gap: 8px;
 
   background: transparent;
   color: var(--text-body);
@@ -106,11 +107,22 @@ input::placeholder {
   cursor: pointer;
 }
 
+.options label svg { 
+  width: 16px;
+  height: 16px; 
+  color: var(--text-body);
+  transition: color .2s;
+
+}
+
+.options input[type="radio"]:checked + label svg {
+  color: var(--brand-light);
+}
+
 .options input[type="radio"]:checked+label {
   background-color: var(--shape-button);
   border-radius: 8px;
   border: none;
-  color: var(--text-heading);
   font-weight: bold;
 }
 
