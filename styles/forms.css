@@ -21,6 +21,11 @@ legend {
   gap: 1rem;
 }
 
+.form-one {
+  display: flex;
+  margin-top: 1rem;
+}
+
 .form-group {
   display: flex;
   flex-direction: column;
@@ -126,3 +131,7 @@ input::placeholder {
   font-weight: bold;
 }
 
+#local {
+  width: 272px;
+  height: 48px;
+}
