@@ -22,7 +22,7 @@ legend {
 }
 
 .form-one {
-  display: flex;
+  /* display: flex; */
   margin-top: 1rem;
 }
 
@@ -77,6 +77,24 @@ input[type="text"] {
   height: 48px;
 }
 
+textarea {
+  width: 560px;
+  height: 136px;
+  border-radius: .5rem;
+  padding: 1rem;
+
+  background-color: var(--input-base);
+  border: 1px solid var(--input-stroke);
+  color: var(--text-body);
+  font: var(--body-sm);
+
+  resize: none;
+}
+
+textarea::placeholder {
+  color: var(--input-placeholder);
+}
+
 
 input::placeholder {
   color: var(--input-placeholder);
@@ -112,15 +130,15 @@ input::placeholder {
   cursor: pointer;
 }
 
-.options label svg { 
+.options label svg {
   width: 16px;
-  height: 16px; 
+  height: 16px;
   color: var(--text-body);
   transition: color .2s;
 
 }
 
-.options input[type="radio"]:checked + label svg {
+.options input[type="radio"]:checked+label svg {
   color: var(--brand-light);
 }
 
