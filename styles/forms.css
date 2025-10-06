@@ -46,6 +46,10 @@ legend {
   /* afasta só quando um form-group vem logo depois de um form-row */
 }
 
+.form-group+.themes-container {
+  margin-top: 1rem;
+}
+
 label {
   font: var(--body-sm);
   color: var(--text-body);
@@ -193,5 +197,35 @@ input::placeholder {
   font: var(--body-sm);
   color: var(--text-body);
   display: block;
-  margin-bottom: .5rem;
+  margin-top: 28px;
+  margin-bottom: 1rem;
+  
+}
+
+.themes-container{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px;
+
+}
+
+.themes-container input[type="radio"] {display: none;}
+
+.theme img{
+  width: 126px;
+  height: 64px;
+  border-radius: 8px;
+  display: block;
+  margin: 0 auto 8px;
+}
+
+.theme{
+  width: 140px;
+  height: 109px;
+  padding: 4px;
+  background-color: var(--shape-button);
+  border: 1px solid var(--input-stroke);
+  border-radius: 8px;
+  overflow: hidden;
+  text-align: center;
 }
