@@ -366,3 +366,62 @@ input[type="radio"]:checked + .theme {
 .file input[type="file"]::file-selector-button:active {
   transform: translateY(1px);
 }
+
+.contacts legend{
+  margin-top: 50px;
+}
+
+#name{
+  width: 560px;
+  height: 48px;
+  max-width: 100%;
+}
+
+#email{
+  width: 272px;
+  height: 48px;
+  max-width: 100%;
+}
+
+#telefone{
+  width: 272px;
+  height: 48px;
+  max-width: 100%;
+}
+
+:root {
+  --danger: #FF5959;
+  --danger-glow: rgba(255, 89, 89, 0.25);
+}
+
+.field-error {
+  display: none;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+  font: var(--body-sm);
+  color: var(--danger);
+}
+
+.field-error img {
+  width: 18px;
+  height: 18px;
+  filter: brightness(0) saturate(100%) invert(42%) sepia(77%) saturate(3463%) hue-rotate(341deg) brightness(99%) contrast(103%);
+}
+
+
+.has-validation input:invalid ~ .field-error {
+  display: flex;
+}
+
+.has-validation input:invalid {
+  border: 2px solid var(--danger);
+  border-radius: 12px;
+  box-shadow: 0 0 0 2px var(--danger-glow) inset;
+}
+
+.form-row.email-telefone {
+  display: flex;
+  align-items: flex-end;
+  gap: 1rem;
+}
