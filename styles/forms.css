@@ -425,3 +425,12 @@ input[type="radio"]:checked + .theme {
   align-items: flex-end;
   gap: 1rem;
 }
+
+.divider {
+  border: none;
+  border-top: 1px solid var(--input-stroke);
+  margin: 3rem ;
+  margin-left: 8rem;
+  width: 560px;
+  max-width: 100%;
+}
