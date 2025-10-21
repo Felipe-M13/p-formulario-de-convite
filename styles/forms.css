@@ -104,6 +104,21 @@ textarea::placeholder {
   color: var(--input-placeholder);
 }
 
+input:focus,
+textarea:focus {
+  border: 2px solid var(--brand-light);
+  outline: none;
+  /* box-shadow: 0 0 0 2px rgba(89, 178, 255, 0.25); */
+}
+
+.has-validation input:invalid,
+.has-validation textarea:invalid {
+  border: 2px solid var(--danger);
+  border-radius: 8px;
+
+}
+
+
 input::placeholder {
   color: var(--input-placeholder);
 }
