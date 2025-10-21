@@ -1,6 +1,6 @@
 ![Página inicial do portal](assets/formulario-de-convite.png)
 
-# 💻 Portal de Notícias
+# 💻 Formulário de Convite
 
 Este projeto tem como objetivo criar um formulário de convite para praticar e aprimorar fundamentos de **HTML** e **CSS**, aplicando conceitos de layout e formulários.
 
